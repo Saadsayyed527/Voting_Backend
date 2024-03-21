@@ -1,0 +1,40 @@
+voting application 
+what 
+
+
+
+modules ?
+routes ?
+
+functions 
+1 user singin 
+2 see list of candidate
+3 user can vote only once 
+4 total number of votes counting real time counting 
+5 sign up using aadhar number 
+6 list of candidates 
+7 admin can only maintain the table and connot vote 
+8 user can chage the pass
+
+---------------------------
+routes 
+1 user authentication
+/singup POST - create new user 
+/login: post - log in using aadhar card number 
+
+2 voting 
+/candidate GET - get list of candidates 
+/vote/:candidate : POST  - Vote for a specific cnadidate 
+
+3 Vote count 
+/vote/counts GET- get the list of votes 
+
+4 User Profile 
+/profile GET  - get the user information
+/profile/password : put - change the pass
+
+ 5 Admin Candidate Managment :
+ /candidate : POST  - create new candidate 
+ / candidate/:candidateId : put - update the existing candidate 
+ /cnadidate/:candidate: DELETE - delete a candidate from the list 
+ 
